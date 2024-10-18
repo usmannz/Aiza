@@ -2,17 +2,60 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./yes_style.css">
-        
+        <style>
+            .container {
+                text-align: center;
+            }
+
+            .heart {
+                display: inline-block;
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                transform: rotate(-45deg);
+                margin-top: 20px;
+            }
+            
+            .heart::before,
+            .heart::after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 50%;
+            }
+    
+            .heart::before {
+                top: -50px;
+                left: 0;
+            }
+    
+            .heart::after {
+                left: 50px;
+                top: 0;
+            }
+
+            .header_text {
+                margin: 15px;
+            }
+
+            .gif_container {
+                margin-top: -70px;
+            }
+        </style>
     </head> 
     <body>
         <div class="container">
-            <div >
-                <h1 class = "header_text">Hurrayyyy!!</h1>
+            <div>
+                <h1 class="header_text">Hurrayyyy!!</h1>
+                <h2 class="header_text">I LOVE YOU SO MUCH!!</h2>
+                <div class="heart"></div>
             </div>
             <div class="gif_container">
-                <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+                <img src="yes.gif" alt="Cute animated illustration">
             </div>
         </div>
-       
     </body> 
 </html>
